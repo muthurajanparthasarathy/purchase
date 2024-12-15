@@ -1,0 +1,291 @@
+/* Global Variables */
+:root {
+    --primary-color: #ff6b82;
+    --secondary-color: #c8c8c8;
+    --font-family: "Inter", sans-serif;
+    --font-size-small: 12px;
+    --font-size-medium: 14px;
+    --font-size-large: 16px;
+    --font-size-xlarge: 18px;
+    --font-size-xxlarge: 20px;
+    --padding-large: 2rem;
+    --padding-small: 2px;
+    --border-radius: 4px;
+}
+
+/* Global Styling */
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    padding: 3% 10%;
+}
+
+/* Line with Text */
+.line-with-text {
+    position: relative;
+    text-align: center;
+    border-top: 2px solid var(--secondary-color);
+    height: 30px;
+}
+
+.line-with-text span {
+    position: relative;
+    top: -10px;
+    background-color: white;
+    padding: 0 10px;
+    font-weight: 600;
+    font-size: var(--font-size-large);
+    color: var(--primary-color);
+}
+
+/* Item Styling */
+.item {
+    position: relative;
+    border: 1px solid var(--secondary-color);
+    padding: var(--padding-large);
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+.item .inner-item {
+    display: flex;
+    align-items: center;
+}
+
+.item b {
+    font-size: var(--font-size-medium);
+}
+
+.item p {
+    font-size: var(--font-size-small);
+    margin: var(--padding-small);
+}
+
+/* Discount & Price Styling */
+.item .discount {
+    padding: 2px 8px;
+    background-color: var(--primary-color);
+    margin: 10px;
+    color: white;
+    font-size: var(--font-size-small);
+}
+
+.item .price {
+    text-align: right;
+    margin-left: auto;
+}
+
+.item .price div:first-child {
+    font-weight: 600;
+}
+
+.item .price span {
+    font-size: var(--font-size-small);
+    opacity: 0.3;
+    text-decoration: line-through;
+    float: left;
+}
+
+/* Radio Button Styling */
+.item [type='radio'] {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    accent-color: var(--primary-color);
+    appearance: none;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.item [type='radio']:checked {
+    background-color: var(--primary-color);
+    border-color: white;
+    outline: 1px solid var(--primary-color);
+}
+
+.item [type='radio']:focus {
+    outline: 1px solid var(--primary-color);
+    border-color: white;
+}
+
+/* Order Summary */
+.order-summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-summary span:first-child {
+    color: var(--primary-color);
+}
+
+.order-summary #total {
+    color: #000;
+    font-weight: 500;
+}
+
+/* Button Styling */
+/* Button Styling */
+/* Button Styling */
+button {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+    padding: 15px;
+    font-size: var(--font-size-xlarge);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button span {
+    font-size: 24px; 
+    margin-right: 8px; 
+}
+
+
+select {
+    width: 80px;
+    height: 30px;
+    margin: var(--padding-small);
+    border: 2px solid var( --secondary-color); /* Updated border */
+    border-radius: 3px;
+    padding: 6px;
+    padding-right: 16px; /* Keeps the space for the icon */
+    padding-left: 10px;  /* Adds space for the text to not overlap */
+    appearance: none; /* Removes the default dropdown arrow */
+    background: #ffffff url('down.png') no-repeat right center; /* Adds background color */
+    background-size: 8px; /* Reduces the size of the icon */
+    background-position-x: calc(100% - 8px); /* Adjust the icon's horizontal position */
+    font-size: 12px; /* Optional: adjust text size */
+}
+
+
+/* Table Styling */
+table {
+    padding: 24px;
+}
+
+table thead th {
+    font-size: var(--font-size-small);
+    text-align: left;
+    font-weight: normal;
+}
+
+table td {
+    font-size: var(--font-size-small);
+}
+
+/* Selected Section */
+.selected-section {
+    background-color: #FFF9FA;
+    border: 2px solid var(--primary-color);
+}
+
+/* Copyright Text */
+.copyright {
+    color: #ccc;
+    font-size: var(--font-size-small);
+    float: right;
+}
+
+/* Hidden Element */
+.d-none {
+    display: none;
+}
+
+/* Most Popular Label */
+.most-popular {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0 0 4px 4px;
+    font-size: var(--font-size-small);
+    width: 119px;
+    height: 20px;
+    text-align: center;
+    opacity: 1;
+}
+
+.most-popular.hidden {
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .item {
+        padding: 1rem;
+    }
+
+    .item b,
+    .item p {
+        font-size: var(--font-size-small);
+    }
+
+    .item .discount {
+        font-size: 10px;
+    }
+
+    .line-with-text span {
+        font-size: var(--font-size-medium);
+    }
+
+    select {
+        width: 60px;
+        height: 30px;
+    }
+
+    button {
+        font-size: var(--font-size-medium);
+        padding: 12px;
+    }
+
+    .order-summary #total {
+        font-size: 15px;
+    }
+
+    .order-summary span:first-child {
+        font-size: var(--font-size-small);
+    }
+
+    .most-popular {
+        font-size: 6px;
+        padding: 0 4px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 340px) {
+    .item b,
+    .item p {
+        font-size: 10px;
+    }
+
+    .item .discount {
+        font-size: 6px;
+    }
+
+    select {
+        width: 60px;
+        height: 30px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .most-popular {
+        font-size: 4px;
+        padding: 2px 4px;
+    }
+}

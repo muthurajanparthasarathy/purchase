@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO</title>
+    <!-- Link Google Fonts - Inter -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Link external css -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Heading with a centered line and text -->
+    <div class="heading">
+        <div class="line-with-text">
+            <span>YAY! It's BOGO</span> <!-- Heading text: Special BOGO promotion -->
+        </div>
+    </div>
+
+    <!-- Product information section -->
+    <div class="product-info-container">
+        
+        <!-- First item with radio button, price, and discount -->
+        <div class="item">
+            <div class="inner-item first-item">
+                <div>
+                    <input type="radio" name="item" checked> <!-- Radio button to select item -->
+                </div>
+                <div>
+                    <span><b>1 Unit</b><span class="discount">10% Off</span></span> <!-- Item description with discount -->
+                    <p>Standard Price</p> <!-- Standard price label -->
+                </div>
+
+                <div class="price">
+                    <div class="discount-price">$21.60 USD</div> <!-- Discounted price -->
+                    <span>$24.00 USD</span> <!-- Original price -->
+                </div>
+            </div>
+            <!-- Hidden table for size and color options -->
+            <table class="d-none">
+                <thead>
+                    <th></th>
+                    <th>Size</th>
+                    <th>Colour</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1</td>
+                        <td>
+                            <select id="size" name="size">
+                                <option value="small">S</option>
+                                <option value="medium">M</option>
+                                <option value="large">L</option>
+                                <option value="xlarge">XL</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="Colour" name="Colour">
+                                <option value="red">Red</option>
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Second item with radio button, price, and discount -->
+        <div class="item">
+            <div class="inner-item second-item">
+                <!-- Most Popular label -->
+                <div class="most-popular">MOST POPULAR</div>
+                <div>
+                    <input type="radio" name="item"> <!-- Radio button for item selection -->
+                </div>
+                <div>
+                    <span><b>2 Unit</b><span class="discount">20% Off</span></span> <!-- Item description with discount -->
+                </div>
+                <div class="price">
+                    <div class="discount-price">$38.40 USD</div> <!-- Discounted price -->
+                    <span>$48.00 USD</span> <!-- Original price -->
+                </div>
+            </div>
+            <!-- Hidden table for size and color options -->
+            <div>
+                <table class="d-none">
+                    <thead>
+                        <th></th>
+                        <th>Size</th>
+                        <th>Colour</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1</td>
+                            <td>
+                                <select id="size" name="size">
+                                    <option value="small">S</option>
+                                    <option value="medium">M</option>
+                                    <option value="large">L</option>
+                                    <option value="xlarge">XL</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select id="Colour" name="Colour">
+                                    <option value="red">Red</option>
+                                    <option value="blue">Blue</option>
+                                    <option value="green">Green</option>
+                                    <option value="black">Black</option>
+                                    <option value="white">White</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!-- Additional row for item size and color -->
+                        <tr>
+                            <td>#2</td>
+                            <td>
+                                <select id="size" name="size">
+                                    <option value="small">S</option>
+                                    <option value="medium">M</option>
+                                    <option value="large">L</option>
+                                    <option value="xlarge">XL</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select id="Colour" name="Colour">
+
+                                    <option value="red">Red</option>
+                                    <option value="blue">Blue</option>
+                                    <option value="green">Green</option>
+                                    <option value="black">Black</option>
+                                    <option value="white">White</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+        <!-- Third item with radio button, price, and discount -->
+        <div class="item">
+            <div class="inner-item third-item">
+                <div>
+                    <input type="radio" name="item"> <!-- Radio button for item selection -->
+                </div>
+                <div>
+                    <span><b>3 Unit</b><span class="discount">30% Off</span></span> <!-- Item description with discount -->
+                </div>
+                <div class="price">
+                    <div class="discount-price">$50.40 USD</div> <!-- Discounted price -->
+                    <span>$72.00 USD</span> <!-- Original price -->
+                </div>
+            </div>
+            <!-- Hidden table for size and color options -->
+            <table class="d-none">
+                <thead>
+                    <th></th>
+                    <th>Size</th>
+                    <th>Colour</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1</td>
+                        <td>
+                            <select id="size" name="size">
+                                <option value="small">S</option>
+                                <option value="medium">M</option>
+                                <option value="large">L</option>
+                                <option value="xlarge">XL</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="Colour" name="Colour">
+                                <option value="red">Red</option>
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#2</td>
+                        <td>
+                            <select id="size" name="size">
+                                <option value="small">S</option>
+                                <option value="medium">M</option>
+                                <option value="large">L</option>
+                                <option value="xlarge">XL</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="Colour" name="Colour">
+                                <option value="red">Red</option>
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#3</td>
+                        <td>
+                            <select id="size" name="size">
+                                <option value="small">S</option>
+                                <option value="medium">M</option>
+                                <option value="large">L</option>
+                                <option value="xlarge">XL</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select id="Colour" name="Colour">
+                                <option value="red">Red</option>
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Order summary section -->
+        <div class="order-summary">
+            <span>Free Delivery</span> <!-- Free delivery message -->
+            <span>Total: <span id="total">$21.60 USD</span></span> <!-- Total order price -->
+        </div>
+
+        <!-- Add to cart button -->
+        <button><span>+</span>Add to Cart</button>
+
+        <!-- Copyright message -->
+        <p class="copyright"><i>@Powered By Pumper</i></p>
+    </div>
+
+    <!-- External JavaScript file -->
+    <script src="script.js"> </script>
+</body>
+
+</html>
